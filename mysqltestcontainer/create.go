@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 
-	_ "github.com/go-sql-driver/mysql"
 	"github.com/hooligram/kifu"
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
