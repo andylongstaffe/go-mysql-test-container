@@ -28,7 +28,7 @@ func (suite *IntegrationTestSuite) SetupSuite() {
 	t := suite.T()
 
 	// Create container
-	container, err := mysqltestcontainer.Create("test")
+	container, err := mysqltestcontainer.Create("integration_test_testify_test")
 	assert.Nil(t, err)
 	err = container.GetDb().Ping()
 	assert.Nil(t, err)
@@ -65,7 +65,6 @@ func (suite *IntegrationTestSuite) TearDownSuite() {
 
 func (suite *IntegrationTestSuite) SetupTest() {
 	assert.Nil(suite.T(), suite.db.Exec("delete from test").Error)
-
 }
 
 func (suite *IntegrationTestSuite) TestIntegrationTest() {

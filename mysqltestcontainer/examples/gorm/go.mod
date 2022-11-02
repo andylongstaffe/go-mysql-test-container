@@ -2,9 +2,13 @@ module github.com/andylongstaffe/go-mysql-test-container/mysqltestcontainer/exam
 
 go 1.19
 
+replace github.com/andylongstaffe/go-mysql-test-container => ../../..
+
 require (
 	github.com/andylongstaffe/go-mysql-test-container v0.0.0-20220930173757-4b4b173a3c35
+	github.com/docker/docker v20.10.13+incompatible
 	github.com/golang-migrate/migrate/v4 v4.15.2
+	github.com/google/martian v2.1.0+incompatible
 	github.com/stretchr/testify v1.8.0
 	gorm.io/driver/mysql v1.3.6
 	gorm.io/gorm v1.23.10
@@ -19,7 +23,6 @@ require (
 	github.com/containerd/containerd v1.6.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect
-	github.com/docker/docker v20.10.13+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
@@ -29,6 +32,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
+	github.com/hooligram/kifu v1.2.4 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/moby/sys/mount v0.2.0 // indirect
